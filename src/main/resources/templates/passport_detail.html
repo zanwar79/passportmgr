@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+
+    <link rel="stylesheet" th:href="@{/app.css}"/>
+    <title>Passport Manager | Home </title>
+</head>
+<body>
+<h1>Home</h1>
+<p>My Passport</p>
+<img th:src="@{/gifs/passport.gif}" alt="logo" />
+<h4 th:text="'ID: ' + ${passport.id}"></h4>
+<h4 th:text="'First Name: ' + ${passport.firstName}"></h4>
+<h4 th:text="'Last Name: ' + ${passport.lastName}"></h4>
+<h4 th:text="'Email: ' + ${passport.email}"></h4>
+</body>
+</html>
